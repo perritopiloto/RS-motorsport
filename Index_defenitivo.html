@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RS Motorsport</title>
+
+  <!-- Tipografía Oswald desde Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* Estilos generales */
+    body {
+      margin: 0;
+      background-color: #000000;
+      font-family: 'Oswald', sans-serif;
+      color: #fffbfb;
+      background-size: cover;
+      background-position: center;
+    }
+
+    /* Cabecera */
+    header {
+      background-color: rgba(255, 0, 0, 0.7);
+      padding: 2rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 3rem;
+      color: #fff;
+    }
+
+    nav {
+      margin-top: 1rem;
+    }
+
+    nav a {
+      margin: 0 1rem;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Contenido principal */
+    main {
+      padding: 3rem;
+      max-width: 900px;
+      margin: auto;
+      background-color: rgba(0, 0, 0, 0.8);
+      border-radius: 10px;
+    }
+
+    section {
+      margin-bottom: 2rem;
+    }
+
+    section h2 {
+      color: #FF0000;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      border-left: 5px solid #FFD700;
+      padding-left: 0.5rem;
+    }
+
+    /* Pie de página */
+    footer {
+      background-color: #FF0000;
+      text-align: center;
+      padding: 1rem;
+      color: #fff;
+    }
+
+    /* Botón personalizado */
+    .button {
+      display: inline-block;
+      background-color: #FFD700;
+      color: #000;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: background-color 0.3s;
+    }
+
+    .button:hover {
+      background-color: #FFA500;
+      color: #000;
+    }
+
+    /* Galería de imágenes */
+    .galeria {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+    }
+
+    .imagen {
+      text-align: center;
+      max-width: 250px;
+    }
+
+    .imagen img {
+      width: 100%;
+      height: 170px;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    }
+
+    .imagen p {
+      margin-top: 0.5rem;
+      font-size: 1rem;
+    }
+
+    @media (max-width: 600px) {
+      main {
+        padding: 1.5rem;
+      }
+
+      .imagen {
+        max-width: 100%;
+      }
+
+      .imagen img {
+        height: auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Cabecera -->
+  <header>
+    <h1>RS Motorsport</h1>
+    <nav>
+      <a href="#sobre">Sobre Nosotros</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <!-- Sección catálogo -->
+  <section id="catalogo">
+    <h2>Catálogo</h2>
+    <div class="galeria">
+      <div class="imagen">
+        <img src="https://espirituracer.com/archivos/2018/05/SEAT-124-FL-2000.jpg" alt="Coche 1" />
+        <p>Coche de competición RS1 "Seat 124"</p>
+      </div>
+      <div class="imagen">
+        <img src="https://i0.wp.com/suspensionsecrets.co.uk/wp-content/uploads/2019/01/feature-1.jpg?fit=750%2C500&ssl=1" alt="Coche 2" />
+        <p>RS Drift Spec "Nissan Silvia"</p>
+      </div>
+      <div class="imagen">
+        <img src="https://preview.redd.it/which-model-got-you-into-vettes-for-me-it-was-this-specific-v0-19zbq9u8rbsd1.jpg?width=640&crop=smart&auto=webp&s=1df23245aff868b16a8f7ea53def3d26adb8329a" alt="Coche 3" />
+        <p>Track Day Machine "Corvette C5 Gran Turismo"</p>
+      </div>
+      <div class="imagen">
+        <img src="https://linkecu.com/tommi-makinen-evo-6/90587072_1111573365846332_3424844786262081536_n/" alt="Coche 4" />
+        <p>Mitsubishi Evo 6 RSparts, nuestro primer patrocinado (mayo de 2018)</p>
+      </div>
+      <div class="imagen">
+        <img src="https://heeltread.com/cdn/shop/articles/mercedes-benz-190e-evo-ii-racer_800x.jpg?v=1597330600" alt="Coche 5" />
+        <p>Mercedes 190E EVO W201 Sonax</p>
+        </div>
+      <div class="imagen">
+        <img src="https://d1gl66oyi6i593.cloudfront.net/wp-content/uploads/2020/10/subasta-BMW-M3-E30-Johnny-Cecotto-1989.jpg" alt="Coche 6" />
+        <p>BMW E30 M3 </p>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- Contenido principal -->
+  <main>
+    <!-- Sobre nosotros -->
+    <section id="sobre">
+      <h2>Sobre Nosotros</h2>
+      <p>RS Motorsport, con sede en Tenerife, es un equipo apasionado por el automovilismo de alto rendimiento. Desde nuestros inicios, llevamos la ingeniería y el diseño al límite para ofrecer experiencias únicas sobre ruedas. En esta etapa de crecimiento, buscamos patrocinadores que compartan nuestra visión y deseen unirse a nuestra emocionante trayectoria en el mundo del motor. Juntos, podemos alcanzar nuevas metas y ofrecer una plataforma de alto impacto para su marca.</p>
+    </section>
+
+    <!-- Servicios -->
+    <section id="servicios">
+      <h2>Servicios</h2>
+      <ul>
+        <li>Preparación de coches de competición</li>
+        <li>Optimización de rendimiento</li>
+        <li>Diagnóstico y reparación avanzada</li>
+        <li>Eventos y track days</li>
+      </ul>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <p>¿Quieres llevar tu coche al siguiente nivel? ¡Contáctanos!</p>
+      <a href="mailto:info@rsmotorsport.com" class="button">Escríbenos</a>
+    </section>
+  </main>
+
+  <!-- Pie de página -->
+  <footer>
+    &copy; 2025 RS Motorsport. Todos los derechos reservados.
+  </footer>
+</body>
+</html>
